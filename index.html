@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="propile.jpeg" alt="Logo" style="height: 40px; width: 40px; border-radius: 50%; margin-right: 10px;">
+                majlis al mu'afah
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/6287874490389?text=Halo,">WhatsApp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog' %}">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:moelsanid.com?subject=Inquiry&body=Hello.">Email</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Content Wrapper to offset navbar height -->
+    <div class="content-wrapper">
+
+        <!-- Hero Section -->
+        <section class="hero text-center">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Majlis Al Mu'Afah</h1>
+                <a href="bg.jpeg" class="btn btn-primary btn-lg">Telusuri</a>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="courses">
+            <div class="container">
+                <h2 class="text-center mb-5">Kitab yang di kaji</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card course-card">
+                            <img src="ngaji2.jpeg" class="card-img-top" alt="Course 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Ahlak</h5>
+                                <p class="card-text">membimbing santri agar berahlak baik.</p>
+                                <a href="app1/" class="btn btn-primary">baca selengkapnya di sini</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card course-card">
+                            <img src="ngaji1.jpeg" class="card-img-top" alt="Course 2">
+                            <div class="card-body">
+                                <h5 class="card-title">nahwu</h5>
+                                <p class="card-text">agar pandai membaca kitab kuning.</p>
+                                <a href="app2/" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card course-card">
+                            <img src="ngaji3.jpeg" class="card-img-top" alt="Course 3">
+                            <div class="card-body">
+                                <h5 class="card-title">sorof</h5>
+                                <p class="card-text">isi sendiri.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2024 Majlis Al Mu'Afah. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
